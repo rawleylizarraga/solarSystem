@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<%- include('partials/head.ejs') %>
+<style>
+    body{ 
+        background-image: url("<%= image %>");
+        background-size: cover;
+    }
+</style>
+<body>
+    <main>
+        <h1>The Solar System</h1>
+        <%- include('partials/nav.ejs') %>
+
+        <br>
+
+        <img src="/img/solar-system.png">
+    </main>
+    
+    <br><br>
+
+    <%- include('partials/footer.ejs') %>
+</body>
+</html>
