@@ -40,16 +40,16 @@
 
     <!-- the edited node files for the image urls dont work with render -->
     <script>
-        if (req.query.planetName == "Mars") {
+        if ("<%= planetName %>" == "Mars") {
             document.querySelector("#planetImg").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Mars_-_August_30_2021_-_Flickr_-_Kevin_M._Gill.png/960px-Mars_-_August_30_2021_-_Flickr_-_Kevin_M._Gill.png";
         }
-        if (req.query.planetName == "Jupiter") {
+        if ("<%= planetName %>" == "Jupiter") {
             document.querySelector("#planetImg").src = "https://upload.wikimedia.org/wikipedia/commons/e/e2/Jupiter_OPAL_2024.png";
         }
-        if (req.query.planetName == "Uranus") {
+        if ("<%= planetName %>" == "Uranus") {
             document.querySelector("#planetImg").src = "https://upload.wikimedia.org/wikipedia/commons/6/69/Uranus_Voyager2_color_calibrated.png";
         }
-        if (req.query.planetName == "Pluto") {
+        if ("<%= planetName %>" == "Pluto") {
             document.querySelector("#planetImg").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Pluto_in_True_Color_-_High-Res.jpg/960px-Pluto_in_True_Color_-_High-Res.jpg";
         }
     </script>
