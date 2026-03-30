@@ -34,7 +34,9 @@ app.get('/planet', (req, res) => {
 });
 
 app.get('/nasa', async (req, res) => {
-   let date = new Date().toLocaleDateString('en-CA'); // <- it took longer for me to get here than it should have
+   // let date = new Date().toLocaleDateString('en-CA'); // <- it took longer for me to get here than it should have EDIT- IT DOESNT WORK ON RENDER
+   let date = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/New_York' }).format(new Date());
+
    console.log(date);
    let url = `https://api.nasa.gov/planetary/apod?api_key=9mUzIkhlZCZaOoMfspg7jMmwZCZ4LiRHtkgkambD&date=${date}`;
    let response = await fetch(url);
