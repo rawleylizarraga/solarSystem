@@ -15,17 +15,17 @@ app.get('/', async (req, res) => {
 });
 
 
-app.get('/earth', (req, res) => {
-   let planetEarth = planets.getEarth();
-   console.log(planetEarth);
-   res.render('earth', { planetEarth });
-});
+// app.get('/earth', (req, res) => {
+//    let planetEarth = planets.getEarth();
+//    console.log(planetEarth);
+//    res.render('earth', { planetEarth });
+// });
 
-app.get('/mars', (req, res) => {
-   let planetMars = planets.getMars();
-   console.log(planetMars);
-   res.render('mars', { planetMars });
-});
+// app.get('/mars', (req, res) => {
+//    let planetMars = planets.getMars();
+//    console.log(planetMars);
+//    res.render('mars', { planetMars });
+// });
 
 app.get('/planet', (req, res) => {
  let planetName = req.query.planetName;
